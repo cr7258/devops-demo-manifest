@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: http-server
+  name: http-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: http-server
+  template:
+    metadata:
+      labels:
+        app: http-server
+    spec:
+      containers:
+      - image: cr7258/http-server:v1 # 镜像 tag 会被 Tekton 替换
+        name: http-server
+        env:
+        - name: Environment
+          valueFrom:
+            configMapKeyRef:
+              name: http-server-config
+              key: Environment
