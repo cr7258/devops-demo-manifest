@@ -8,3 +8,7 @@ replicas:
 resources:
 - ../../base
 - configmap.yaml
+images:
+- name: cr7258/devops-demo-app
+  newName: cr7258/devops-demo-app
+  newTag: 612471af16834abfc88de44a92eef6d38f209b61
