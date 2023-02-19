@@ -2,24 +2,24 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: http-server
-  name: http-server
+    app: devops-demo-app
+  name: devops-demo-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: http-server
+      app: devops-demo-app
   template:
     metadata:
       labels:
-        app: http-server
+        app: devops-demo-app
     spec:
       containers:
-      - image: cr7258/http-server:v1 # 镜像 tag 会被 Tekton 替换
-        name: http-server
+      - image: cr7258/devops-demo-app:v1 # 镜像 tag 会被 Tekton 替换
+        name: devops-demo-app
         env:
         - name: Environment
           valueFrom:
             configMapKeyRef:
-              name: http-server-config
+              name: devops-demo-app-config
               key: environment
