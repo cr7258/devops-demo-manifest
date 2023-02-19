@@ -11,4 +11,4 @@ resources:
 images:
 - name: cr7258/devops-demo-app
   newName: cr7258/devops-demo-app
-  newTag: e575e513b50c33f26ae3c146cb8881a36244cca1
+  newTag: 5521c76bb1578a937f635f3fe17ba70d2d13b4f7
