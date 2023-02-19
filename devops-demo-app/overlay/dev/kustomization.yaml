@@ -1,6 +1,10 @@
 
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-bases:
-  - ../../base
-  - configmap.yaml
+resources:
+- ../../base
+- configmap.yaml
+images:
+- name: cr7258/devops-demo-app
+  newName: cr7258/devops-demo-app
+  newTag: 6e11d39e6848159125889d8be6c663cd78cf3de6
