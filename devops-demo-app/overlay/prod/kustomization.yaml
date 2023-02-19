@@ -11,4 +11,4 @@ resources:
 images:
 - name: cr7258/http-server
   newName: cr7258/http-server
-  newTag: 65644a76aaace79a87bf263224ce7baa09b39f4c
+  newTag: aed55b4e5b1b9eb1eb65063ef02064335b1e6490
