@@ -8,3 +8,7 @@ replicas:
 resources:
 - ../../base
 - configmap.yaml
+images:
+- name: cr7258/http-server
+  newName: cr7258/http-server
+  newTag: 5313a6fa76f2d8d30a22d48ec619b623fc4b1c02
