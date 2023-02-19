@@ -22,4 +22,4 @@ spec:
           valueFrom:
             configMapKeyRef:
               name: http-server-config
-              key: Environment
+              key: environment
