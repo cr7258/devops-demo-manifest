@@ -4,7 +4,7 @@ kind: Kustomization
 
 replicas:
 - count: 5
-  name: http-server
+  name: devops-demo-app
 resources:
 - ../../base
 - configmap.yaml
